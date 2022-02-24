@@ -12,18 +12,18 @@
 
   </head>
 
-<body ng-app="LunchCheck">
-  <div ng-controller="LunchCheckController">
+<body ng-app="WordCheck">
+  <div ng-controller="WordCheckController">
    <div class="container">
      <h1>Was the wordle there before?</h1>
 
          <div class="form-group" ng-keypress="clearMessage()">
-             <input id="lunch-menu" type="text"
+             <input id="word-menu" type="text"
              placeholder="wordle to check "
-             class="form-control" ng-model="lunch" style='border-color:{{color}};{{border}}' ng-keypress="clearMessage()" ng-keyup="$event.keyCode == 13 ? checkLunch() : null">
+             class="form-control" ng-model="word" style='border-color:{{color}};{{border}}' ng-keypress="clearMessage()" ng-keyup="$event.keyCode == 13 ? checkWord() : null">
          </div>
          <div class="form-group">
-             <button class="btn btn-default" ng-click="checkLunch()">Was it there before?</button>
+             <button class="btn btn-default" ng-click="checkWord()">Was it there before?</button>
          </div>
          <div class="form-group message" style='color:{{color}};'>
            <!-- Your message can go here. -->
