@@ -23,9 +23,9 @@ function LunchCheckController ($scope){
       if(wordlist.indexOf(lunch) != -1){
         printMessage("Word was in the original list","green");
       } else{
-        printMessage("Word was NOT in the oroginal list","red");
+        printMessage("Word was NOT in the original list","red");
       }
-    
+
   }
 
   function countArray(arr){
