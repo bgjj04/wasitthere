@@ -17,10 +17,10 @@
    <div class="container">
      <h1>Was the wordle there before?</h1>
 
-         <div class="form-group">
+         <div class="form-group" ng-keypress="clearMessage()">
              <input id="lunch-menu" type="text"
              placeholder="wordle to check "
-             class="form-control" ng-model="lunch" style='border-color:{{color}};{{border}}'>
+             class="form-control" ng-model="lunch" style='border-color:{{color}};{{border}}' ng-keypress="clearMessage()" ng-keyup="$event.keyCode == 13 ? checkLunch() : null">
          </div>
          <div class="form-group">
              <button class="btn btn-default" ng-click="checkLunch()">Was it there before?</button>
