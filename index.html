@@ -1,6 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+function setFocusToTextBox(){
+    document.getElementById("word-menu").focus();
+}
+</script>
 
 
     <title>Was the wordle there before?</title>
@@ -12,7 +17,7 @@
 
   </head>
 
-<body ng-app="WordCheck">
+<body ng-app="WordCheck" onload='setFocusToTextBox()'>
   <div ng-controller="WordCheckController">
    <div class="container">
      <h1>Was the wordle there before?</h1>
