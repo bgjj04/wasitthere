@@ -11,6 +11,7 @@ function WordCheckController ($scope){
 
   $scope.clearMessage = function(){
     var word = $scope.word;
+    word = word.toLowerCase();
     $scope.message = "";
     printMessage("","red");
 
@@ -18,7 +19,7 @@ function WordCheckController ($scope){
 
   $scope.checkWord = function (){
 
-    var word = $scope.word;
+    var word = $scope.word.toLowerCase();
     $scope.message = "";
     $scope.border = "border-style:solid;"
     if (word == ""){
